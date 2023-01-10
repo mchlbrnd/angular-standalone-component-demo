@@ -13,10 +13,14 @@ import { AppService } from '../../../../main/src/app/app.service';
 })
 export class MasterDemoComponent {
   // use own instance of AppService
-  // constructor(@Self() public readonly appService: AppService) {
+  // constructor(@Self() public readonly ownAppService: AppService) {
   // }
 
   // use root instance of AppService
+  // constructor(@SkipSelf() public readonly inheritedAppService: AppService) {
+  // }
+
+  // use root instance of AppService and own instance of AppService
   constructor(@SkipSelf() public readonly inheritedAppService: AppService, @Self() public readonly ownAppService: AppService) { // use
   }
 }
