@@ -17,6 +17,6 @@ export class MasterDemoComponent {
   // }
 
   // use root instance of AppService
-  constructor(@SkipSelf() public readonly appService: AppService) { // use
+  constructor(@SkipSelf() public readonly inheritedAppService: AppService, @Self() public readonly ownAppService: AppService) { // use
   }
 }
