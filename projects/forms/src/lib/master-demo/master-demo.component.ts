@@ -2,12 +2,13 @@ import { Component, Self, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppService } from '../../../../main/src/app/app.service';
+import { MasterStepOneComponent } from '../master-step-one/master-step-one.component';
 
 @Component({
   selector: 'forms-master-demo',
   standalone: true,
   providers: [AppService],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MasterStepOneComponent],
   templateUrl: './master-demo.component.html',
   styleUrls: ['./master-demo.component.css']
 })
