@@ -8,7 +8,11 @@ import { AppService } from './app.service';
   selector: 'app-root',
   standalone: true,
   providers: [AppService],
-  imports: [CommonModule, RouterModule, FormsModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    FormsModule
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
